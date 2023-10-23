@@ -93,7 +93,7 @@ const Who = () => {
           </Canvas>
         </Left>
         <Right>
-          <Title>Ceración de espacios de cultura</Title>
+          <Title>Creación de espacios de cultura</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
             <Subtitle>¿Cómo lo haremos?</Subtitle>

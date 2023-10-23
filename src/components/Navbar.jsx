@@ -72,14 +72,13 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
-            <ListItem><Button>Inicio</Button></ListItem>
-            <ListItem><Button>Invitados</Button></ListItem>
-            <ListItem><Button>Agenda</Button></ListItem>
-            <ListItem><Button>Sobre nosotros</Button></ListItem>
+            <ListItem><Button target="_blank" onClick={() => window.open("")}>Inicio</Button></ListItem>
+            <ListItem><Button target="_blank" onClick={() => window.open("./pages/guests")}>Invitados</Button></ListItem>
+            <ListItem><Button target="_blank" onClick={() => window.open("./pages/diary")}>Agenda</Button></ListItem>
+            <ListItem><Button target="_blank" onClick={() => window.open("./pages/about")}>Sobre nosotros</Button></ListItem>
           </List>
         </Links>
         <Icons>
-          {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
           <Button>Ayuda</Button>
         </Icons>
