@@ -59,12 +59,9 @@ const Icon = styled.img`
 `;
 
 const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #da4ea2;
+  background-color: transparent;
   color: white;
   border: none;
-  border-radius: 5px;
   cursor: pointer;
 `;
 
@@ -75,16 +72,16 @@ const Navbar = () => {
         <Links>
           <Logo src="./img/logo.png" />
           <List>
-            <ListItem>Home</ListItem>
-            <ListItem>Studio</ListItem>
-            <ListItem>Works</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem><Button>Inicio</Button></ListItem>
+            <ListItem><Button>Invitados</Button></ListItem>
+            <ListItem><Button>Agenda</Button></ListItem>
+            <ListItem><Button>Sobre nosotros</Button></ListItem>
           </List>
         </Links>
         <Icons>
           {/* Changed the image due to copyright problems */}
           <Icon src="./img/search.png" />
-          <Button>Hire Now</Button>
+          <Button>Ayuda</Button>
         </Icons>
       </Container>
     </Section>

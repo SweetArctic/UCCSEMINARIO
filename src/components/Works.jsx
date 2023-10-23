@@ -5,11 +5,11 @@ import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 
 const data = [
-  "Web Design",
-  "Development",
-  "Illustration",
-  "Product Design",
-  "Social Media",
+  "Desarrollo",
+  "Cultura",
+  "Ilustración",
+  "Aprendizaje",
+  "Educación",
 ];
 
 const Section = styled.div`
@@ -95,7 +95,7 @@ const Right = styled.div`
 `;
 
 const Works = () => {
-  const [work, setWork] = useState("Web Design");
+  const [work, setWork] = useState("Desarrollo");
   return (
     <Section>
       <Container>
@@ -109,9 +109,9 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Web Design" ? (
+          {work === "Desarrollo" ? (
             <WebDesign />
-          ) : work === "Development" ? (
+          ) : work === "Cultura" ? (
             <Development />
           ) : (
             <ProductDesign />

@@ -93,16 +93,15 @@ const Who = () => {
           </Canvas>
         </Left>
         <Right>
-          <Title>Think outside the square space</Title>
+          <Title>Ceración de espacios de cultura</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>Who we Are</Subtitle>
+            <Subtitle>¿Cómo lo haremos?</Subtitle>
           </WhatWeDo>
           <Desc>
-            a creative group of designers and developers with a passion for the
-            arts.
+            Durante el progreso de las actividades se pretende inspirar, enseñar e inculcar la cultura humana.
           </Desc>
-          <Button>See our works</Button>
+          <Button>Aprende más</Button>
         </Right>
       </Container>
     </Section>
