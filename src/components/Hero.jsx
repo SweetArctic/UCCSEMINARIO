@@ -126,15 +126,15 @@ const Hero = () => {
       <Navbar />
       <Container>
         <Left>
-          <Title>Think. Make. Solve.</Title>
+          <Title>Seminario Universidad Cooperativa 2023</Title>
           <WhatWeDo>
             <Line src="./img/line.png" />
-            <Subtitle>What we Do</Subtitle>
+            <Subtitle>¿De qué se trata?</Subtitle>
           </WhatWeDo>
           <Desc>
-            we enjoy creating delightful, human-centered digital experiences.
+            Es la realización de actividades con el fin de que los participantes adquieran nuevos conocimientos y habilidades, y que desarrollen su capacidad de análisis y crítica.
           </Desc>
-          <Button>Learn More</Button>
+          <Button>Saber más</Button>
         </Left>
         <Right>
           <Canvas>
