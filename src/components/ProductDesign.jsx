@@ -5,14 +5,14 @@ import Shoe from "./Shoe";
 import styled from "styled-components";
 
 const Desc = styled.div`
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  position: absolute;
-  bottom: 200px;
-  right: 100px;
+width: 200px;
+padding: 20px;
+background-color: RGBA(0, 0, 0, 0.5);
+border-radius: 10px;
+position: absolute;
+top: 100px;
+right: 100px;
+color: white;
 
   @media only screen and (max-width: 768px) {
     top: 0;
@@ -35,7 +35,7 @@ const ProductDesign = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        Descripción 3
+      La analítica de datos es una disciplina en constante evolución. A medida que las tecnologías de datos y análisis continúan desarrollándose, la analítica de datos se volverá aún más poderosa y se utilizará en una gama aún más amplia de aplicaciones.
       </Desc>
     </>
   );

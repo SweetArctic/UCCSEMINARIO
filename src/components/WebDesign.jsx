@@ -6,13 +6,13 @@ import Mac from "./Mac";
 
 const Desc = styled.div`
   width: 200px;
-  height: 70px;
   padding: 20px;
-  background-color: white;
+  background-color: RGBA(0, 0, 0, 0.5);
   border-radius: 10px;
   position: absolute;
   top: 100px;
   right: 100px;
+  color: white;
 
   @media only screen and (max-width: 768px) {
     top: 0;
@@ -35,7 +35,7 @@ const WebDesign = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        Descripción 1
+        Comprender que la inteligencia artificial es un campo de la ciencia de la computación que se ocupa de la creación de agentes inteligentes, que son sistemas que pueden razonar, aprender, actuar y resolver problemas de forma autónoma
       </Desc>
     </>
   );

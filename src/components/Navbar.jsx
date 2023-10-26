@@ -11,18 +11,33 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  width: 1400px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 0px;
+ list-style-type: none;
+ margin: 0;
+ padding: 0;
+ overflow: hidden;
+ white-space: nowrap;
+ margin-left: -150%;
 
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    padding: 10px;
-  }
+ @media only screen and (max-width: 768px) {
+    width: 100px;
+    align-items: center;
+    margin-left: 0%;
+    flex-direction: column 2;
+ }
 `;
 
+const Item = styled.div`
+ display: inline-block;
+ color: #fff;
+ text-align: center;
+ padding: 14px 16px;
+ text-decoration: none;
+
+ @media only screen and (max-width: 768px) {
+    display: flex;
+    width: 100%;
+ }
+`;
 const Links = styled.div`
   display: flex;
   align-items: center;
@@ -31,36 +46,24 @@ const Links = styled.div`
 
 const Logo = styled.img`
   height: 100px;
+  @media only screen and (max-width: 768px) {
+    width: 100px
+  }
 `;
 
 const List = styled.ul`
   display: flex;
   gap: 20px;
   list-style: none;
-
-  @media only screen and (max-width: 768px) {
-    display: none;
-  }
 `;
 
 const ListItem = styled.li`
   cursor: pointer;
 `;
 
-const Icons = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 20px;
-`;
-
-const Icon = styled.img`
-  width: 20px;
-  cursor: pointer;
-`;
-
 const Button = styled.button`
-  background-color: transparent;
-  color: white;
+  background-color: #00FF0000;
+  color: #FFFFFF;
   border: none;
   cursor: pointer;
 `;
@@ -71,25 +74,21 @@ const Navbar = () => {
       <Container>
         <Links>
           <Logo src="./img/logo.png" />
-          <List>
+            <List>
           <ListItem>
-            <Button to="/about/guests">Invitados</Button>
+            <Button to="./pages/guests.html">Invitados</Button>
           </ListItem>
           <ListItem>
-            <Button to="/about/agenda">Agenda</Button>
+            <Button to="/pages/agenda">Agenda</Button>
           </ListItem>
           <ListItem>
-            <Button to="/about/about">Sobre nosotros</Button>
+            <Button to="/pages/Concurso">Concurso</Button>
           </ListItem>
           <ListItem>
-            <Button to="/about/more">Más</Button>
+            <Button to="/pages/about">Sobre nosotros</Button>
           </ListItem>
-          </List>    
+          </List>
         </Links>
-        <Icons>
-          <Icon src="./img/search.png" />
-          <Button>Ayuda</Button>
-        </Icons>
       </Container>
     </Section>
   );

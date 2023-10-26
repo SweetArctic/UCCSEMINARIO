@@ -5,10 +5,10 @@ import ProductDesign from "./ProductDesign";
 import WebDesign from "./WebDesign";
 
 const data = [
-  "Desarrollo",
-  "Cultura",
-  "Ilustración",
-  "Aprendizaje",
+  "Desarrollo de Software",
+  "S.I.E",
+  "Analit. de datos",
+  "Int. Artifical",
   "Educación",
 ];
 
@@ -27,11 +27,6 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
-
-  @media only screen and (max-width: 768px) {
-    width: 100%;
-    flex-direction: column;
-  }
 `;
 
 const Left = styled.div`
@@ -42,6 +37,8 @@ const Left = styled.div`
   @media only screen and (max-width: 768px) {
     padding: 20px;
     justify-content: center;
+    font-size: 25px;
+    text-align: center;
   }
 `;
 
@@ -53,11 +50,12 @@ const List = styled.ul`
 `;
 
 const ListItem = styled.li`
-  font-size: 90px;
+  font-family: 'Roboto';
+  font-size: 60px;
   font-weight: bold;
   cursor: pointer;
-  color: transparent;
-  -webkit-text-stroke: 1px white;
+  color: #2a5085;
+  -webkit-text-stroke: 1px #FFFFFF;
   position: relative;
 
   @media only screen and (max-width: 768px) {
@@ -71,7 +69,7 @@ const ListItem = styled.li`
     position: absolute;
     top: 0;
     left: 0;
-    color: pink;
+    color: #a742f5;
     width: 0px;
     overflow: hidden;
     white-space: nowrap;
@@ -93,9 +91,8 @@ const ListItem = styled.li`
 const Right = styled.div`
   flex: 1;
 `;
-
 const Works = () => {
-  const [work, setWork] = useState("Desarrollo");
+  const [work, setWork] = useState("Desarrollo de Software");
   return (
     <Section>
       <Container>
@@ -109,9 +106,9 @@ const Works = () => {
           </List>
         </Left>
         <Right>
-          {work === "Desarrollo" ? (
+          {work === "Desarrollo de Software" ? (
             <WebDesign />
-          ) : work === "Cultura" ? (
+          ) : work === "S.I.E" ? (
             <Development />
           ) : (
             <ProductDesign />

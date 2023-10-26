@@ -5,21 +5,17 @@ import Atom from "./Atom";
 import styled from "styled-components";
 
 const Desc = styled.div`
-  width: 200px;
-  height: 70px;
-  padding: 20px;
-  background-color: white;
-  border-radius: 10px;
-  position: absolute;
-  top: 200px;
-  right: 100px;
+width: 200px;
+padding: 20px;
+background-color: RGBA(0, 0, 0, 0.5);
+border-radius: 10px;
+position: absolute;
+top: 100px;
+right: 100px;
+color: white;
 
   @media only screen and (max-width: 768px) {
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
+    Display: flex;
   }
 `;
 
@@ -33,7 +29,7 @@ const Development = () => {
         </Suspense>
       </Canvas>
       <Desc>
-        Descripción 2
+      Es un conjunto de sistemas informáticos que se combinan para proporcionar una visión única de los datos de una empresa. Un SIE puede integrar datos de diferentes departamentos y unidades de negocio, lo que permite a los usuarios acceder a la información que necesitan de forma rápida y sencilla.
       </Desc>
     </>
   );

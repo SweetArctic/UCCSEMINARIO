@@ -103,7 +103,7 @@ const Contact = () => {
       <Container>
         <Left>
           <Form ref={ref} onSubmit={handleSubmit}>
-            <Title>Contact Us</Title>
+            <Title>Contactanos</Title>
             <Input placeholder="Nombre" name="name" />
             <Input placeholder="Correo electrónico" name="email" />
             <TextArea
