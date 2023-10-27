@@ -1,19 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="guests.js" type="text/javascript"></script>
-    <style src="guests.css" type="text/css"></style>
-    <title>Invitados</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="guests.scss">
+  <title>Invitados</title>
 </head>
 <body>
-    <div id="app"></div>
-<a href="https://dribbble.com/shots/3774469-T-R-A-V-E-L-E-R" target="_blank" class="icon-link">
-  <img src="http://icons.iconarchive.com/icons/uiconstock/socialmedia/256/Dribbble-icon.png">
-</a>
-<a href="https://twitter.com/NikolayTalanov" target="_blank" class="icon-link icon-link--twitter">
-  <img src="https://cdn1.iconfinder.com/data/icons/logotypes/32/twitter-128.png">
-</a>
+  <!-- Preloader -->
+<div id="preloader">
+  <div id="status">&nbsp;</div>
+</div>
+
+<img width="100%" src='https://unsplash.it/3000/3000/?random' />
+ <style>
+  body {
+  overflow: hidden;
+}
+
+
+/* Preloader */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #fff;
+  /* change if the mask should have another color then white */
+  z-index: 99;
+  /* makes sure it stays on top */
+}
+
+#status {
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  left: 50%;
+  /* centers the loading animation horizontally one the screen */
+  top: 50%;
+  /* centers the loading animation vertically one the screen */
+  background-image: url(https://raw.githubusercontent.com/niklausgerber/PreLoadMe/master/img/status.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: -100px 0 0 -100px;
+  /* is width and height divided by two */
+}
+ </style>
+ <script>
+  //hacer que después de 3 segundos se redirija a otra página llamada guests.loaded.html
+  setTimeout(() =>{
+    window.location.href = "guests.loaded.html";
+    }, 2000);
+ </script>
 </body>
 </html>

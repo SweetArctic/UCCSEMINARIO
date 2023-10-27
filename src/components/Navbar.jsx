@@ -26,18 +26,6 @@ const Container = styled.div`
  }
 `;
 
-const Item = styled.div`
- display: inline-block;
- color: #fff;
- text-align: center;
- padding: 14px 16px;
- text-decoration: none;
-
- @media only screen and (max-width: 768px) {
-    display: flex;
-    width: 100%;
- }
-`;
 const Links = styled.div`
   display: flex;
   align-items: center;
@@ -45,9 +33,11 @@ const Links = styled.div`
 `;
 
 const Logo = styled.img`
+  margin-top: 2rem;
   height: 100px;
+
   @media only screen and (max-width: 768px) {
-    width: 100px
+    width: 80px
   }
 `;
 
@@ -69,25 +59,38 @@ const Button = styled.button`
 `;
 
 const Navbar = () => {
+  const inicio = () => {
+    window.open("/",);
+  };
+    const guests = () => {
+      window.open("./pages/guests.html");
+  };
+  const diary = () => {
+    window.open("./pages/diary.html");
+};
+const about = () => {
+  window.open("./pages/about.html");
+};
+
   return (
     <Section>
       <Container>
         <Links>
           <Logo src="./img/logo.png" />
             <List>
-          <ListItem>
-            <Button to="./pages/guests.html">Invitados</Button>
-          </ListItem>
-          <ListItem>
-            <Button to="/pages/agenda">Agenda</Button>
-          </ListItem>
-          <ListItem>
-            <Button to="/pages/Concurso">Concurso</Button>
-          </ListItem>
-          <ListItem>
-            <Button to="/pages/about">Sobre nosotros</Button>
-          </ListItem>
-          </List>
+              <ListItem>
+                <Button onClick={inicio}>Inicio</Button>
+              </ListItem>
+              <ListItem>
+                <Button onClick={guests}>Invitados</Button>
+              </ListItem>
+              <ListItem>
+                <Button onClick={diary}>Agenda</Button>
+              </ListItem>
+              <ListItem>
+                <Button onClick={about}>Sobre nosotros</Button>
+              </ListItem>
+            </List>
         </Links>
       </Container>
     </Section>
